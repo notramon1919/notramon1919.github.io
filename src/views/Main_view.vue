@@ -4,6 +4,6 @@
 
 <template>
   <div id="main_frame">
-    <p> Holaap</p>
+    <p> Prueba </p>
   </div>
 </template>

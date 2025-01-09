@@ -1,1 +1,0 @@
-import{_ as a,c as o,a as n,o as t}from"./index-CuaMVkC2.js";const r={},s={id:"main_frame"};function c(_,e){return t(),o("div",s,e[0]||(e[0]=[n("p",null," Holaap",-1)]))}const d=a(r,[["render",c]]);export{d as default};

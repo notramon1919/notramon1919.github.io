@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <!-- Posibbilidad de hacer un barra de navegación aquí -->
+  <!-- Posibilidad de hacer un barra de navegación aquí -->
 
   <!-- Vista principal -->
   <RouterView />

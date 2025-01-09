@@ -1,7 +1,6 @@
 /* styles.css */
 
 html {
-    height: 100%;
     margin: 0;
     padding: 0;
     background: linear-gradient(#b4d2ff, #6d8afd);
@@ -9,11 +8,12 @@ html {
 
 #main_frame {
 
+    border-radius: 25px;
+
     display: flex;
     justify-content: center;
-    align-items: center;
-
     background-color: white;
-    width: 70%;
-    height: 85%
+
+    margin: 5% 20%;
+    padding: 5% 20%;
 }
