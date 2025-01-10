@@ -1,3 +1,7 @@
+<script setup>
+  import elonMusk from '@/assets/elon_musk.jpeg'
+</script>
+
 <template>
   <div id="frame">
     <v-row justify="center" align="center">
@@ -9,7 +13,7 @@
           :height="400"
           cover
           rounded="xl"
-          src="src/assets/elon_musk.jpeg"
+          :src=elonMusk
         ></v-img>
       </v-col>
 
@@ -39,5 +43,3 @@
     </v-row>
   </div>
 </template>
-<script setup lang="ts">
-</script>

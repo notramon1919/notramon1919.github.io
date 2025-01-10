@@ -1,5 +1,5 @@
 <script setup>
-import elonMusk from '@/assets/elon_musk.jpeg' // Importa la imagen correctamente
+import elonMusk from '@/assets/elon_musk.jpeg'
 
 const items = [
   {
@@ -8,7 +8,7 @@ const items = [
     title: 'Grado Medio (SMX)',
     text: 'Este estuvo guapo',
     date: '2020/22',
-    image: elonMusk // Imagen asociada
+    image: elonMusk
   },
   {
     color: 'purple-lighten-2',
@@ -30,7 +30,9 @@ const items = [
 </script>
 
 <template>
+
   <div id="frame">
+
     <!-- Timeline -->
     <v-timeline direction="horizontal">
       <!-- Bucle que saca todas las cards de items -->
@@ -79,10 +81,3 @@ const items = [
     </v-timeline>
   </div>
 </template>
-
-<style scoped>
-.rounded-t {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-</style>
