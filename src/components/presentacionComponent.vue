@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div id="frame">
+  <div class="frame" id="presentacion">
     <v-row justify="center" align="center">
 
       <!-- Columna 1 -->

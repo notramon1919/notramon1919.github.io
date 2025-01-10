@@ -1,5 +1,5 @@
 <template>
-  <div id="nav_bar">
+  <div class="nav_bar" id="nav_bar">
     <v-row justify="center" align="center">
 
       <!-- Botón Historial Académico -->
