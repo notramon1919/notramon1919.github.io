@@ -1,19 +1,19 @@
 /* styles.css */
 
 html {
-    margin: 0;
-    padding: 0;
     background: linear-gradient(#b4d2ff, #6d8afd);
 }
 
-#main_frame {
-
+#frame {
     border-radius: 25px;
-
-    display: flex;
-    justify-content: center;
     background-color: white;
+    margin: 1% 18% 1% 18%;
+    padding: 5% 8%;
+}
 
-    margin: 5% 20%;
-    padding: 5% 20%;
+#nav_bar {
+    border-radius: 25px;
+    background-color: white;
+    margin: 2% 18% 2% 18%;
+    padding: 2% 5%;
 }

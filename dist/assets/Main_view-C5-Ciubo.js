@@ -1,1 +1,0 @@
-import{_ as a,c as n,a as o,o as r}from"./index-B08WQtvW.js";const t={},s={id:"main_frame"};function c(_,e){return r(),n("div",s,e[0]||(e[0]=[o("p",null," Prueba ",-1)]))}const d=a(t,[["render",c]]);export{d as default};

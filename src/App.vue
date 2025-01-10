@@ -3,10 +3,9 @@
 </script>
 
 <template>
-  <!-- Posibilidad de hacer un barra de navegación aquí -->
 
   <!-- Vista principal -->
-  <RouterView />
+  <RouterView/>
 
 </template>
 
