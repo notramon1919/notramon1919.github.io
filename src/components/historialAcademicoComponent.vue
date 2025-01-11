@@ -6,7 +6,7 @@ const items = [
     color: 'red-lighten-2',
     icon: 'mdi-star',
     title: 'Grado Medio (SMX)',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit? Aperiam architecto commodi debitis earum in inventore minus porro quaerat, quibusdam recusandae.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     date: '2020/22',
     image: stock_image,
     masInfoURL: 'https://ceice.gva.es/es/web/formacion-profesional/publicador-ciclos/-/asset_publisher/FRACVC0hANWa/content/ciclo-formativo-sistemas-microinformatico-y-redes'
@@ -15,7 +15,7 @@ const items = [
     color: 'purple-lighten-2',
     icon: 'mdi-book-variant',
     title: 'Grado Superior (DAM)',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit? Aperiam architecto commodi debitis earum in inventore minus porro quaerat, quibusdam recusandae.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     date: '2022/24',
     image: stock_image,
     masInfoURL: 'https://ceice.gva.es/es/web/formacion-profesional/publicador-ciclos/-/asset_publisher/FRACVC0hANWa/content/ciclo-formativo-desarrollo-de-aplicaciones-multiplataforma'
@@ -24,7 +24,7 @@ const items = [
     color: 'green-lighten-1',
     icon: 'mdi-airballoon',
     title: 'Especialización (IA y Big Data)',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit? Aperiam architecto commodi debitis earum in inventore minus porro quaerat, quibusdam recusandae.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     date: '2024/25',
     image: stock_image,
     masInfoURL: 'https://ceice.gva.es/va/web/formacion-profesional/publicador-de-dossier-de-cursos/-/asset_publisher/R4uiU2vzyVnY/content/curs-d-especialitzacio-desenvolupament-de-videojocs-i-realitat-virtual?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_R4uiU2vzyVnY_assetEntryId=358170454&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_R4uiU2vzyVnY_redirect=https%3A%2F%2Fceice.gva.es%2Fes%2Fweb%2Fformacion-profesional%2Fpublicador-de-dossier-de-cursos%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_R4uiU2vzyVnY%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_R4uiU2vzyVnY_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_R4uiU2vzyVnY_assetEntryId%3D358170454'
@@ -34,7 +34,7 @@ const items = [
 
 <template>
 
-  <div class="frame" id="historial_academico">
+  <div class="historial_academico" id="historial_academico">
 
     <!-- Timeline -->
     <v-timeline direction="horizontal">

@@ -7,21 +7,21 @@ const items = ref([
     image: stock_image,
     title: 'STN Cerámicas',
     subtitle: 'Subtítulo 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit? Aperiam architecto commodi debitis earum in inventore minus porro quaerat, quibusdam recusandae.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit.',
     mostrar: false
   },
   {
     image: stock_image,
     title: 'Blumaq S.A.',
     subtitle: 'Subtítulo 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit? Aperiam architecto commodi debitis earum in inventore minus porro quaerat, quibusdam recusandae.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     mostrar: false
   },
   {
     image: stock_image,
     title: 'IN.GRA.M',
     subtitle: 'Subtítulo 3',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit? Aperiam architecto commodi debitis earum in inventore minus porro quaerat, quibusdam recusandae.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     mostrar: false
   }
 ])
@@ -39,7 +39,7 @@ const toggleExpand = (index) => {
       <v-col v-for="(item, i) in items" :key="i">
 
         <!-- La tarjeta en sí -->
-        <v-card max-width="344">
+        <v-card max-width="344" class="m-4">
 
           <!-- Imagen -->
           <v-img

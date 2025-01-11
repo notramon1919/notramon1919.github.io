@@ -7,7 +7,7 @@ html {
 .frame {
     border-radius: 25px;
     background-color: white;
-    margin: 1% 18% 1% 18%;
+    margin: 2% 18% 2% 18%;
     padding: 5% 8%;
 }
 
@@ -16,4 +16,11 @@ html {
     background-color: white;
     margin: 2% 18% 2% 18%;
     padding: 2% 5%;
+}
+
+.historial_academico {
+    border-radius: 25px;
+    background-color: white;
+    margin: 2% 18% 2% 18%;
+    padding: 3% 4%;
 }

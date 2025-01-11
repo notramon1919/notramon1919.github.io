@@ -3,10 +3,10 @@ import PresentacionComponent from '@/components/presentacionComponent.vue'
 import NavBarComponent from '@/components/navBarComponent.vue'
 import HistorialAcademicoComponent from '@/components/historialAcademicoComponent.vue'
 import ExperienciaLaboral from '@/components/experienciaLaboral.vue'
+import CompetenciasComponent from '@/components/competenciasComponent.vue'
 import { defineComponent } from 'vue'
-
 export default defineComponent({
-  components: { ExperienciaLaboral, PresentacionComponent, NavBarComponent, HistorialAcademicoComponent }
+  components: { CompetenciasComponent, ExperienciaLaboral, PresentacionComponent, NavBarComponent, HistorialAcademicoComponent }
 })
 </script>
 
@@ -27,5 +27,8 @@ export default defineComponent({
 
   <!-- Cuarto Frame -->
   <ExperienciaLaboral />
+
+  <!-- Quinto frame -->
+  <CompetenciasComponent />
 
 </template>
