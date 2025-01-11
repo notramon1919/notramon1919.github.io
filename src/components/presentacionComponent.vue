@@ -1,5 +1,5 @@
 <script setup>
-  import elonMusk from '@/assets/elon_musk.jpeg'
+  import stock_image from '@/assets/stock_image.jpg'
 </script>
 
 <template>
@@ -13,7 +13,7 @@
           :height="400"
           cover
           rounded="xl"
-          :src=elonMusk
+          :src=stock_image
         ></v-img>
       </v-col>
 
