@@ -1,17 +1,10 @@
 /* styles.css */
 
 html {
-    background: linear-gradient(#b4d2ff, #6d8afd);
+    background: linear-gradient(#b9c8ff, #4e75ff);
 }
 
 .frame {
-    border-radius: 25px;
-    background-color: white;
-    margin: 2% 18% 2% 18%;
-    padding: 5% 8%;
-}
-
-.nav_bar {
     border-radius: 25px;
     background-color: white;
     margin: 2% 18% 2% 18%;
@@ -23,4 +16,16 @@ html {
     background-color: white;
     margin: 2% 18% 2% 18%;
     padding: 3% 4%;
+}
+
+h1 {
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 2% 2% 2%;
 }

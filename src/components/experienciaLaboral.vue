@@ -33,6 +33,9 @@ const toggleExpand = (index) => {
 
 <template>
   <div class="frame">
+
+    <h1 id="experiencia_laboral"> Experiencia Laboral </h1>
+
     <v-row>
 
       <!-- Iteración de tarjetas -->

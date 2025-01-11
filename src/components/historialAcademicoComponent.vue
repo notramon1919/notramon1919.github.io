@@ -4,7 +4,7 @@ import stock_image from '@/assets/stock_image.jpg'
 const items = [
   {
     color: 'red-lighten-2',
-    icon: 'mdi-star',
+    icon: 'mdi-desktop-classic',
     title: 'Grado Medio (SMX)',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     date: '2020/22',
@@ -13,7 +13,7 @@ const items = [
   },
   {
     color: 'purple-lighten-2',
-    icon: 'mdi-book-variant',
+    icon: 'mdi-code-parentheses',
     title: 'Grado Superior (DAM)',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     date: '2022/24',
@@ -22,7 +22,7 @@ const items = [
   },
   {
     color: 'green-lighten-1',
-    icon: 'mdi-airballoon',
+    icon: 'mdi-head-snowflake',
     title: 'Especialización (IA y Big Data)',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
     date: '2024/25',
@@ -34,7 +34,9 @@ const items = [
 
 <template>
 
-  <div class="historial_academico" id="historial_academico">
+  <div class="historial_academico">
+
+    <h1 id="historial_academico"> Historial Académico </h1>
 
     <!-- Timeline -->
     <v-timeline direction="horizontal">
@@ -47,7 +49,7 @@ const items = [
         fill-dot
       >
         <!-- La carta en sí -->
-        <v-card class="mx-auto" max-width="340">
+        <v-card max-width="600">
 
           <!-- Título de la carta -->
           <v-card-title :class="['text-h6', `bg-${item.color}`]">
@@ -59,7 +61,7 @@ const items = [
             {{ item.date }}
           </v-card-subtitle>
 
-          <!-- Imagen ajustada con v-img -->
+          <!-- Imagen -->
           <v-img
             :src="item.image"
             height="100px"
@@ -75,7 +77,7 @@ const items = [
             <!-- Botón de la carta -->
             <v-btn :color="item.color"
                    variant="outlined"
-                   style="margin-top: 5px"
+                   style="margin-top: 10px"
                    :href="item.masInfoURL"
                    target="_blank">
               Más Info

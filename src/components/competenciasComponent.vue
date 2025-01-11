@@ -2,41 +2,46 @@
 const items = [
   {
     title: "Java",
-    description: "Me mola java",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.",
     icon: "mdi-language-java"
   },
   {
     title: "Vue.js",
-    description: "Tambien me mola vue",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.",
     icon: "mdi-vuejs"
   },
   {
     title: "Python",
-    description: "Tambien me mola python",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.",
     icon: "mdi-language-python"
-  },
-  {
-    title: "HTML y CSS",
-    description: "Esto no me mola tanto",
-    icon: "mdi-language-html5"
-  },
+  }
 ]
 </script>
 
 <template>
   <div class="frame">
+
+    <!-- Título de sección -->
+    <h1 id="competencias"> Competencias </h1>
+
     <v-row>
+
+      <!-- Iteración de todas las competencias -->
       <v-col v-for="(item, i) in items" :key="i">
 
+        <!-- La carta en sí -->
         <v-card
           class="mx-auto "
           :prepend-icon="item.icon"
           width="400"
         >
+
+          <!-- Título en slot -->
           <template v-slot:title>
             <span class="font-weight-black">{{ item.title }}</span>
           </template>
 
+          <!-- Texto de la carta -->
           <v-card-text class="bg-surface-light pt-4">
             {{ item.description }}
           </v-card-text>
@@ -46,7 +51,3 @@ const items = [
     </v-row>
   </div>
 </template>
-
-<style scoped>
-
-</style>

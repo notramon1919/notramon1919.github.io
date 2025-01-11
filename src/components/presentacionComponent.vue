@@ -1,9 +1,21 @@
 <script setup>
-  import stock_image from '@/assets/stock_image.jpg'
+import stock_image from '@/assets/stock_image.jpg'
+
+const items = [
+  {
+    icon: 'mdi-github',
+    url: 'https://github.com/notramon1919'
+  },
+  {
+    icon: 'mdi-linkedin',
+    url: 'https://linkedin.com/in/ramón-martí-adsuara'
+  }
+]
 </script>
 
 <template>
   <div class="frame" id="presentacion">
+
     <v-row justify="center" align="center">
 
       <!-- Columna 1 -->
@@ -34,8 +46,20 @@
           <br>
 
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae minus molestias officia placeat
-            veritatis voluptates! Asperiores debitis, deleniti distinctio, ducimus fuga iusto omnis quibusdam quis quo
-            reprehenderit, veniam voluptate.</p>
+            veritatis voluptates!</p>
+
+        </v-row>
+
+        <!-- Socials -->
+        <v-row>
+          <v-btn
+            v-for="(item, i) in items"
+            :key="i"
+            :icon="item.icon"
+            :href="item.url"
+            style="margin: 20px 20px 0 0"
+            target="_blank"
+          ></v-btn>
         </v-row>
 
       </v-col>
