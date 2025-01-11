@@ -1,12 +1,13 @@
 <script>
-  import PresentacionComponent from '@/components/presentacionComponent.vue'
-  import NavBarComponent from '@/components/navBarComponent.vue'
-  import HistorialAcademicoComponent from '@/components/historialAcademicoComponent.vue'
-  import { defineComponent } from 'vue'
+import PresentacionComponent from '@/components/presentacionComponent.vue'
+import NavBarComponent from '@/components/navBarComponent.vue'
+import HistorialAcademicoComponent from '@/components/historialAcademicoComponent.vue'
+import ExperienciaLaboral from '@/components/experienciaLaboral.vue'
+import { defineComponent } from 'vue'
 
-  export default defineComponent({
-    components: { PresentacionComponent, NavBarComponent, HistorialAcademicoComponent }
-  })
+export default defineComponent({
+  components: { ExperienciaLaboral, PresentacionComponent, NavBarComponent, HistorialAcademicoComponent }
+})
 </script>
 
 <template>
@@ -16,12 +17,15 @@
   <br>
 
   <!-- Primer Cuadrado Blanco (Frame) -->
-  <PresentacionComponent/>
+  <PresentacionComponent />
 
   <!-- Segundo Frame -->
-  <NavBarComponent/>
+  <NavBarComponent />
 
   <!-- Tercer Frame -->
-  <HistorialAcademicoComponent/>
+  <HistorialAcademicoComponent />
+
+  <!-- Cuarto Frame -->
+  <ExperienciaLaboral />
 
 </template>
