@@ -1,31 +1,24 @@
 /* styles.css */
 
 html {
-    background: linear-gradient(#b9c8ff, #4e75ff);
+    background: linear-gradient(#4e75ff, #f384ff);
 }
 
 .frame {
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: white;
     margin: 2% 18% 2% 18%;
     padding: 2% 5%;
 }
 
-.historial_academico {
-    border-radius: 25px;
-    background-color: white;
-    margin: 2% 18% 2% 18%;
-    padding: 3% 4%;
-}
-
 h1 {
     position: relative;
     font-family: "Raleway", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 40px;
     color: #080808;
 
     text-align: center;
     text-transform: uppercase;
-    padding: 0 2% 2% 2%;
+    padding: 0 2% 3% 2%;
 }

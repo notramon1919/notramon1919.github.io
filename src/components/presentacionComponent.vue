@@ -39,14 +39,9 @@ const items = [
 
         <!-- Introduccion -->
         <v-row>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae minus molestias officia placeat
-            veritatis voluptates! Asperiores debitis, deleniti distinctio, ducimus fuga iusto omnis quibusdam quis quo
-            reprehenderit, veniam voluptate.</p>
-
+          <p> Buenas! Soy Ramón Martí y hago esta página para que veais un poco lo que he aprendido estos ultimos años aprendiendo informática (principalmente programación). Además de los sitios en los que he estado de prácticas.</p>
           <br>
-
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae minus molestias officia placeat
-            veritatis voluptates!</p>
+          <p> Aquí teneis mi Github para que podais ver los proyectos personales y de clase. Y mi Linkedin, para que veais que he estado haciendo ultimamente.</p>
 
         </v-row>
 

@@ -1,27 +1,29 @@
 <script setup>
 import { ref } from 'vue'
-import stock_image from '@/assets/stock_image.jpg'
+import stn from '@/assets/empresas/stn.png'
+import blumaq from '@/assets/empresas/blumaq.png'
+import intram from '@/assets/empresas/intram.png'
 
 const items = ref([
   {
-    image: stock_image,
+    image: stn,
     title: 'STN Cerámicas',
-    subtitle: 'Subtítulo 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit.',
+    subtitle: 'Nules - 2 Meses',
+    description: 'En mis primeras prácticas fui técnico de sistemas. Me permitió aprender los pasos a seguir cuando ocurren problemas. ',
     mostrar: false
   },
   {
-    image: stock_image,
+    image: blumaq,
     title: 'Blumaq S.A.',
-    subtitle: 'Subtítulo 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
+    subtitle: 'La Vall d\'Uixó - 2 Meses',
+    description: 'Tuve la oportunidad de trabajar con SAP y crear programas en su lenguaje, ABAP. Fue un gran desafio al no haberlo usado anteriormente.',
     mostrar: false
   },
   {
-    image: stock_image,
-    title: 'IN.GRA.M',
-    subtitle: 'Subtítulo 3',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium excepturi ipsa nostrum possimus quis repellendus suscipit ullam velit?.',
+    image: intram,
+    title: 'IN.TRA.M',
+    subtitle: 'Praga - 2 Meses',
+    description: 'Participé en un programa de FP en el extranjero. Entre otras actividades, diseñé una página web con Wordpress para un producto de la empresa.',
     mostrar: false
   }
 ])
@@ -29,6 +31,7 @@ const items = ref([
 const toggleExpand = (index) => {
   items.value[index].mostrar = !items.value[index].mostrar
 }
+
 </script>
 
 <template>
