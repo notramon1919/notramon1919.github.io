@@ -12,10 +12,6 @@ export default defineComponent({
 
 <template>
 
-  <!-- Spacers -->
-  <br>
-  <br>
-
   <!-- Primer Cuadrado Blanco (Frame) -->
   <PresentacionComponent />
 
