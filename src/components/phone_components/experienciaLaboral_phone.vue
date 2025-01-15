@@ -9,14 +9,15 @@ const items = ref([
     image: stn,
     title: 'STN Cerámicas',
     subtitle: 'Nules - 2 Meses',
-    description: 'En mis primeras prácticas fui técnico de sistemas. Me permitió aprender los pasos a seguir cuando ocurren problemas. ',
+    description: 'En mis primeras prácticas fui técnico de sistemas. Me permitió aprender los pasos a seguir cuando ocurren problemas. Aunque no hice nada de programación, ' +
+      'me llevé una buena experiencia con un equipo maravilloso.',
     mostrar: false
   },
   {
     image: blumaq,
     title: 'Blumaq S.A.',
     subtitle: 'La Vall d\'Uixó - 2 Meses',
-    description: 'Tuve la oportunidad de trabajar con SAP y crear programas en su lenguaje, ABAP. Fue un gran desafio al no haberlo usado anteriormente.',
+    description: 'Trabajé con SAP creando transacciones para posteriormente pasarlos a producción. Fue un gran desafio al no haber usado ABAP, el lenguaje del ERP, anteriormente.',
     mostrar: false
   },
   {
