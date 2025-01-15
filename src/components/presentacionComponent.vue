@@ -1,5 +1,21 @@
 <script setup>
 import profile_photo from '@/assets/yo.jpg'
+import { computed } from 'vue'
+import { useDisplay } from 'vuetify'
+
+const { name } = useDisplay()
+
+// eslint-disable-next-line vue/return-in-computed-property
+const height = computed(() => {
+  switch (name.value) {
+    case 'xs': return 400
+    case 'sm': return 400
+    case 'md': return 400
+    case 'lg': return 400
+    case 'xl': return 400
+    case 'xxl': return 400
+  }
+})
 
 const items = [
   {
@@ -15,6 +31,8 @@ const items = [
     url: 'https://drive.google.com/file/d/1OqO2tIO6Msf27IYRhuBglEG7wuW3uacL/view?usp=sharing',
   },
 ]
+
+
 </script>
 
 <template>
@@ -23,13 +41,13 @@ const items = [
 
       <!-- Columna 1 -->
       <v-col>
-        <v-img :width="300" :height="400" cover rounded="xl" :src="profile_photo"></v-img>
+        <v-img width="320px" :height="height" cover rounded="xl" :src="profile_photo"></v-img>
       </v-col>
 
       <!-- Columna 2 -->
-      <v-col class="text-left">
+      <v-col>
         <!-- Titulo -->
-        <v-row style="padding-bottom: 20px">
+        <v-row style="padding-bottom: 4%">
           <h3 class="text-h3">Hola, soy Ramón!</h3>
         </v-row>
 
@@ -40,7 +58,7 @@ const items = [
             estos ultimos años aprendiendo informática (principalmente programación). Además de los
             sitios en los que he estado de prácticas.
           </p>
-          <br />
+          <br/>
           <p>
             Aquí teneis mi Github para que podais ver los proyectos personales y de clase. Y mi
             Linkedin, para que veais que he estado haciendo ultimamente.
@@ -54,7 +72,7 @@ const items = [
             :key="i"
             :icon="item.icon"
             :href="item.url"
-            style="margin: 20px 20px 0 0"
+            style="margin: 5% 4% 0 0"
             target="_blank"
           ></v-btn>
         </v-row>

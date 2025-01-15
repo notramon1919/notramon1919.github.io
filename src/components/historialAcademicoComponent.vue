@@ -52,7 +52,7 @@ const items = [
         fill-dot
       >
         <!-- La carta en sí -->
-        <v-card max-width="600">
+        <v-card>
 
           <!-- Título de la carta -->
           <v-card-title :class="['text-h6', `bg-${item.color}`]">
@@ -91,5 +91,6 @@ const items = [
         </v-card>
       </v-timeline-item>
     </v-timeline>
+
   </div>
 </template>
