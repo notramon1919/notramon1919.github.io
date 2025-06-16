@@ -27,7 +27,7 @@ const items = [
     icon: 'mdi-head-snowflake',
     title: 'Especialización (IA y Big Data)',
     text: 'La especialización es el mayor desafío al que me he enfrentado. La manipulación de datos a gran escala y la creación de modelos capaces de realizar predicciones es solo una ' +
-      'pequeña parte de lo que he dado en este curso.',
+      'pequeña parte de lo que está siendo este año. Y es que, aunque conozca bien a casi todos los profesores, no dan tregua 🥲.',
     date: '2024/25',
     image: grado_especializacion,
     masInfoURL: 'https://ceice.gva.es/es/web/formacion-profesional/publicador-de-dossier-de-cursos/-/asset_publisher/R4uiU2vzyVnY/content/curs-d-especialitzaci%C3%B3-desenvolupament-de-videojocs-i-realitat-virtual-duplica-1'
@@ -37,59 +37,46 @@ const items = [
 
 <template>
 
-  <div class="frame">
+  <div id="historial_academico">
 
-    <h1 id="historial_academico"> Historial Académico </h1>
+    <h1> Historial Académico </h1>
 
     <!-- Timeline -->
-    <v-timeline direction="horizontal">
+    <v-timeline side="end">
+
       <!-- Bucle que saca todas las cards de items -->
       <v-timeline-item
         v-for="(item, i) in items"
         :key="i"
         :dot-color="item.color"
-        :icon="item.icon"
         fill-dot
       >
-        <!-- La carta en sí -->
-        <v-card max-width="600">
-
-          <!-- Título de la carta -->
-          <v-card-title :class="['text-h6', `bg-${item.color}`]">
-            {{ item.title }}
+        <v-card max-width="230px">
+          <v-card-title :class="[`bg-${item.color}`]">
+            <v-icon
+              :icon="item.icon"
+              size="large"
+            ></v-icon>
+            <h6 class="font-weight-bold">
+              {{item.title}}
+            </h6>
           </v-card-title>
-
-          <!-- Subtítulo de la carta -->
-          <v-card-subtitle :class="['text-body', `bg-${item.color}`]">
-            {{ item.date }}
-          </v-card-subtitle>
-
-          <!-- Imagen -->
-          <v-img
-            :src="item.image"
-            height="100px"
-            cover
-          ></v-img>
-
-          <!-- Texto de la carta -->
-          <v-card-text class="bg-white text--primary">
-            <p>
-              {{ item.text }}
-            </p>
-
-            <!-- Botón de la carta -->
-            <v-btn :color="item.color"
-                   variant="outlined"
-                   style="margin-top: 10px"
-                   :href="item.masInfoURL"
-                   target="_blank">
-              Más Info
-            </v-btn>
-
+          <v-card-text style="padding: 10px">
+            {{item.text}}
           </v-card-text>
+
+          <!-- Botón de la carta -->
+          <v-btn :color="item.color"
+                 variant="outlined"
+                 style="margin: 10px"
+                 :href="item.masInfoURL"
+                 target="_blank">
+            Más Info
+          </v-btn>
 
         </v-card>
       </v-timeline-item>
     </v-timeline>
+
   </div>
 </template>
