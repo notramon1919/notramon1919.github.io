@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import stn from '@/assets/empresas/stn.png'
 import blumaq from '@/assets/empresas/blumaq.png'
 import intram from '@/assets/empresas/intram.png'
+import inituji from '@/assets/empresas/inituji.png'
 
 const items = ref([
   {
@@ -24,6 +25,13 @@ const items = ref([
     title: 'IN.TRA.M',
     subtitle: 'Praga - 2 Meses',
     description: 'Participé en un programa de FP en el extranjero. Entre otras actividades, diseñé una página web con Wordpress para un producto de la empresa.',
+    mostrar: false
+  },
+  {
+    image: inituji,
+    title: 'INIT - UJI',
+    subtitle: 'Castellón de la Plana - 2 Meses',
+    description: 'Trabajé junto a otros alumnos expertos en inteligencia artificial.',
     mostrar: false
   }
 ])

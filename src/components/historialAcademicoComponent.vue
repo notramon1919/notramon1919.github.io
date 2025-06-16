@@ -27,7 +27,7 @@ const items = [
     icon: 'mdi-head-snowflake',
     title: 'Especialización (IA y Big Data)',
     text: 'La especialización es el mayor desafío al que me he enfrentado. La manipulación de datos a gran escala y la creación de modelos capaces de realizar predicciones es solo una ' +
-      'pequeña parte de lo que está siendo este año. Y es que, aunque conozca bien a casi todos los profesores, no dan tregua 🥲.',
+      'pequeña parte de lo que he dado en este curso.',
     date: '2024/25',
     image: grado_especializacion,
     masInfoURL: 'https://ceice.gva.es/es/web/formacion-profesional/publicador-de-dossier-de-cursos/-/asset_publisher/R4uiU2vzyVnY/content/curs-d-especialitzaci%C3%B3-desenvolupament-de-videojocs-i-realitat-virtual-duplica-1'

@@ -8,7 +8,7 @@ const items = [
   },
   {
     title: 'Vue.js',
-    description: 'Aprendí a usar librerias de componentes (como Naive-UI, Primevue y Vuetify) para hacer distintas aplicaciones web, o bueno, esta pagina web esta hecha usando Vuetify. ',
+    description: 'Aprendí a usar librerias de componentes (como Naive-UI, Primevue y Vuetify) para hacer distintas aplicaciones web, bueno, esta pagina web esta hecha usando Vuetify. ',
     icon: 'mdi-vuejs'
   },
   {
