@@ -1,5 +1,8 @@
 <script setup>
-import stock_image from '@/assets/stock_image.jpg'
+import yo from '@/assets/presentacion_images/yo.jpg'
+import { useDisplay } from 'vuetify'
+
+const { mdAndDown } = useDisplay()
 
 const items = [
   {
@@ -9,6 +12,10 @@ const items = [
   {
     icon: 'mdi-linkedin',
     url: 'https://linkedin.com/in/ramón-martí-adsuara'
+  },
+  {
+    icon: 'mdi-email',
+    url: 'mailto:rmartiadsuara@gmail.com'
   }
 ]
 </script>
@@ -16,52 +23,59 @@ const items = [
 <template>
   <div class="frame" id="presentacion">
     <v-row
-      class="d-flex align-center justify-space-between"
-      style="min-height: 20vh; padding: 0 10vw;"
+      :class="mdAndDown ? 'flex-column' : 'flex-row'"
+      class="d-flex align-center"
+      style="min-height: 40vh; padding: 0 5vw;"
     >
-      <!-- Columna Imagen -->
+      <!-- Imagen -->
       <v-col
-        cols="5"
-        class="d-flex justify-center"
+        :cols="12"
+        :md="5"
+        class="d-flex justify-center mb-4"
       >
         <v-img
-          :width="300"
-          :height="400"
+          :width="mdAndDown ? '100%' : 300"
+          :height="mdAndDown ? 'auto' : 500"
+          max-width="400"
+          aspect-ratio="2/3"
           cover
           rounded="xl"
-          :src="stock_image"
+          :src="yo"
         ></v-img>
       </v-col>
 
-      <!-- Columna Texto -->
+      <!-- Texto -->
       <v-col
-        cols="6"
+        :cols="12"
+        :md="7"
         class="d-flex flex-column justify-center"
       >
-        <!-- Titulo -->
-        <v-row style="padding-bottom: 20px;">
-          <h3 class="text-h3">Hola, soy Ramón!</h3>
+        <v-row class="pb-4">
+          <h3 class="text-h4 text-md-h3 text-center text-md-left">Hola, soy Ramón!</h3>
         </v-row>
 
-        <!-- Introducción -->
         <v-row>
-          <p>Buenas! Soy Ramón Martí y hago esta página para que veais un poco lo que he aprendido estos últimos años
+          <p>
+            Buenas! Soy Ramón Martí y hago esta página para que veáis un poco lo que he aprendido estos últimos años
             aprendiendo informática (principalmente programación). Además de los sitios en los que he estado de
-            prácticas.</p>
-          <br>
-          <p>Aquí tenéis mi Github para que podáis ver los proyectos personales y de clase. Y mi Linkedin, para que
-            veáis qué he estado haciendo últimamente.</p>
+            prácticas.
+          </p>
+          <br />
+          <p>
+            Aquí tenéis mi Github para que podáis ver los proyectos personales y de clase. Y mi Linkedin, para que
+            veáis qué he estado haciendo últimamente.
+          </p>
         </v-row>
 
-        <!-- Socials -->
-        <v-row>
+        <!-- Botones sociales -->
+        <v-row class="mt-10 mb-10 justify-center justify-md-start">
           <v-btn
             v-for="(item, i) in items"
             :key="i"
             :icon="item.icon"
             :href="item.url"
-            style="margin: 20px 20px 0 0"
             target="_blank"
+            class="me-3"
           ></v-btn>
         </v-row>
       </v-col>

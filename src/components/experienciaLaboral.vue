@@ -4,6 +4,9 @@ import stn from '@/assets/empresas/stn.png'
 import blumaq from '@/assets/empresas/blumaq.png'
 import intram from '@/assets/empresas/intram.png'
 import inituji from '@/assets/empresas/inituji.png'
+import { useDisplay } from 'vuetify'
+
+const { mdAndDown } = useDisplay()
 
 const items = ref([
   {
@@ -32,7 +35,7 @@ const items = ref([
     image: inituji,
     title: 'INIT - UJI',
     subtitle: 'Castellón de la Plana - 2 Meses',
-    description: 'Trabajé junto a otros alumnos expertos en inteligencia artificial.',
+    description: 'Trabajé junto a otros alumnos expertos en Inteligencia Digital. Desarrollé una solución que usaba una arquitectura RAG y hice junto a un compañero una página web que la servía con Flask.',
     mostrar: false
   }
 ])
@@ -40,27 +43,28 @@ const items = ref([
 const toggleExpand = (index) => {
   items.value[index].mostrar = !items.value[index].mostrar
 }
-
 </script>
 
 <template>
   <div class="frame">
-
     <h1 id="experiencia_laboral"> Experiencia Laboral </h1>
 
-    <v-row>
-
+    <v-row :align="mdAndDown ? 'stretch' : 'start'" :justify="mdAndDown ? 'center' : 'start'">
       <!-- Iteración de tarjetas -->
-      <v-col v-for="(item, i) in items" :key="i">
-
+      <v-col
+        v-for="(item, i) in items"
+        :key="i"
+        :cols="mdAndDown ? 12 : 3"
+      >
         <!-- La tarjeta en sí -->
-        <v-card max-width="344" class="m-4">
-
+        <v-card :max-width="mdAndDown ? '100%' : '100%'" class="mx-auto my-4">
           <!-- Imagen -->
           <v-img
             :src="item.image"
             height="200px"
-            cover></v-img>
+            width="100%"
+            cover
+          ></v-img>
 
           <!-- Título y subtítulo -->
           <v-card-title>{{ item.title }}</v-card-title>
@@ -79,7 +83,6 @@ const toggleExpand = (index) => {
               {{ item.description }}
             </v-card-text>
           </v-fade-transition>
-
         </v-card>
       </v-col>
     </v-row>
