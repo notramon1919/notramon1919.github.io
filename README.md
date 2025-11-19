@@ -1,4 +1,4 @@
-# Portfolio Profesional
+# Portfolio
 
 Portfolio web moderno y responsive creado con React, TypeScript y Tailwind CSS. Optimizado para GitHub Pages.
 
