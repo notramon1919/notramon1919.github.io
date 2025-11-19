@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-medium">
                 <img
-                  src="public/images/me.jpeg"
+                  src="/images/me.jpeg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
