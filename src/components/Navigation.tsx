@@ -19,6 +19,7 @@ const Navigation = () => {
     { label: "Sobre mí", href: "#sobre-mi" },
     { label: "Experiencia", href: "#experiencia" },
     { label: "Formación", href: "#formacion" },
+    { label: "Cursos", href: "#cursos" },
     { label: "Idiomas", href: "#idiomas" },
     { label: "Contacto", href: "#contacto" },
   ];
