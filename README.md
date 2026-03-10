@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio web moderno y responsive creado con React, TypeScript y Tailwind CSS. Optimizado para GitHub Pages.
+Portfolio web responsive creado con React, TypeScript y Tailwind CSS. Optimizado para GitHub Pages.
 
 ## 🛠️ Tecnologías
 
@@ -28,6 +28,7 @@ Portfolio web moderno y responsive creado con React, TypeScript y Tailwind CSS. 
 │   │   ├── About.tsx      # Sobre mí
 │   │   ├── Experience.tsx # Experiencia laboral
 │   │   ├── Contact.tsx    # Formulario de contacto
+│   │   ├── Courses.tsx    # Formación complementaria
 │   │   └── Footer.tsx     # Pie de página
 │   ├── pages/
 │   │   └── Index.tsx      # Página principal

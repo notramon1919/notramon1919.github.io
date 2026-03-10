@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen } from "lucide-react";
+
 
 const Courses = () => {
   const courses = [
@@ -11,9 +11,19 @@ const Courses = () => {
       description:
         "Programa intensivo de 16 días con 16 proyectos REALES y 160 ejercicios de código. Aprendizaje desde fundamentos hasta aplicaciones avanzadas en Machine Learning, Data Science, Django, Interfaces Gráficas y Videojuegos.",
       skills: ["Python", "OOP", "Machine Learning", "Data Science", "Django", "PyGame", "Web Scraping", "AI"],
-      icon: BookOpen,
+      image: "/images/courses/python.png",
       certificateUrl: "https://www.udemy.com/certificate/UC-d3c98660-567c-4e29-b03d-9fc0291de8b0/",
     },
+    {
+      title: "Introduction to MCP",
+      provider: "Anthropic",
+      date: "2026",
+      description:
+        "Este curso técnico de Anthropic enseña a implementar el Model Context Protocol (MCP) para estandarizar la conexión entre modelos de IA y datos externos, cubriendo la creación de servidores, clientes y la gestión de recursos en tiempo real.",
+      skills: ["MCP", "Modelos de Lenguaje", "IA", "Desarrollo de Software", "Tools"],
+      image: "/images/courses/anthropic.png",
+      certificateUrl: "https://verify.skilljar.com/c/ko4ucsoyqsrg",
+    }
   ];
 
   return (
@@ -29,7 +39,7 @@ const Courses = () => {
 
         <div className="max-w-4xl mx-auto space-y-6">
           {courses.map((course, index) => {
-            const Icon = course.icon;
+            const Icon = course.image;
             return (
               <Card
                 key={index}
@@ -38,7 +48,7 @@ const Courses = () => {
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Icon className="h-8 w-8 text-primary" />
+                      <img src={Icon} alt={course.title} className="h-8 w-8 text-primary" />
                     </div>
                   </div>
                   

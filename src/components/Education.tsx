@@ -74,7 +74,7 @@ const Education = () => {
                         <h3 className="text-xl font-bold mb-1">{edu.degree}</h3>
                         <p className="text-lg text-primary font-medium mb-2">{edu.institution}</p>
                       </div>
-                      <div className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full w-fit">
+                      <div className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full w-fit whitespace-nowrap">
                         {edu.period}
                       </div>
                     </div>
