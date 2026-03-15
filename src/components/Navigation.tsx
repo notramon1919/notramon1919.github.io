@@ -20,6 +20,7 @@ const Navigation = () => {
     { label: "Experiencia", href: "#experiencia" },
     { label: "Formación", href: "#formacion" },
     { label: "Cursos", href: "#cursos" },
+    { label: "Proyectos", href: "#proyectos" },
     { label: "Idiomas", href: "#idiomas" },
     { label: "Contacto", href: "#contacto" },
   ];
@@ -28,7 +29,14 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const offset = 80; // Adjust this value based on nav height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 

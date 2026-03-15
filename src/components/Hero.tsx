@@ -27,7 +27,7 @@ const Hero = () => {
 
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Hola, soy{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-gradient-shift">
                 Ramón Martí
               </span>
             </h1>

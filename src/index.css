@@ -140,4 +140,12 @@ All colors MUST be HSL.
   .transition-smooth {
     transition: var(--transition-smooth);
   }
+
+  /* Elegant section separators */
+  .divider-line {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, transparent 10%, hsl(var(--primary)) 50%, transparent 90%, transparent 100%);
+    margin: 2rem 0;
+  }
 }

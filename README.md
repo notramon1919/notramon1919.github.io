@@ -29,6 +29,8 @@ Portfolio web responsive creado con React, TypeScript y Tailwind CSS. Optimizado
 │   │   ├── Experience.tsx # Experiencia laboral
 │   │   ├── Contact.tsx    # Formulario de contacto
 │   │   ├── Courses.tsx    # Formación complementaria
+│   │   ├── Projects.tsx    # Proyectos personales hechos
+│   │   ├── Languages.tsx    # Idiomas aprendidos
 │   │   └── Footer.tsx     # Pie de página
 │   ├── pages/
 │   │   └── Index.tsx      # Página principal
