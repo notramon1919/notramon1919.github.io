@@ -5,10 +5,17 @@ const Projects = () => {
   const projects = [
     {
       title: "customrag4all",
-      link: "https://github.com",
+      link: "https://github.com/notramon1919/customrag4all",
       description:
         "Solución integral de RAG personalizable que permite indexar y consultar documentos locales mediante LLMs. Facilita la creación de un sistema de preguntas y respuestas eficiente, priorizando la privacidad y la precisión de los datos.",
       tags: ["RAG", "Python", "IA", "ChromaDB", "Ollama", "Flask"]
+    },
+    {
+      title: "ocr_vision",
+      link: "https://github.com/notramon1919/ocr_vision",
+      description:
+        "Herramienta de visión artificial local para digitalizar albaranes. Extrae automáticamente cabeceras y tablas de productos mediante modelo local de IA, transformando imágenes en datos estructurados CSV/JSON.",
+      tags: ["OCR", "Visión Artificial", "Python", "IA", "Ollama", "Flask"]
     }
   ];
 
